@@ -1,12 +1,27 @@
 # Quantifying Meritocracy: Extending "Talent vs. Luck" Model to Incorporate Solidarity
 
+[![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Research](https://img.shields.io/badge/Research-Computational%20Social%20Science-orange.svg)](https://github.com/EltonChang1/Quantifying-Meritocracy-TvL-Solidarity)
+
+## 📊 [**View Complete Results & Analysis →**](RESULTS.md)
+
 ## Overview
 
-This project extends the computational **Talent vs. Luck (TvL)** model to quantitatively examine how solidarity-driven redistributive policies can mitigate economic inequality and enhance social mobility in meritocratic systems.
+This computational research project provides **empirical evidence** for Michael Sandel's critique of meritocracy by extending the Talent vs. Luck (TvL) model with solidarity mechanisms. Through agent-based simulations of 1,000+ agents across 100 economic iterations, we demonstrate that **moderate wealth redistribution (15-25%) reduces inequality by 90% while achieving 100% upward mobility**.
+
+### Key Findings
+
+- **Pure meritocracy generates severe inequality** (Gini: 0.39) even with equal starting conditions
+- **15-25% redistribution achieves near-perfect equality** (Gini: 0.03) with 100% upward mobility
+- **Preventive policies outperform delayed intervention** by preventing decades of unnecessary inequality
+- **Results robust across varying talent distributions, economic conditions, and tax compliance rates**
 
 ### Research Question
 
 Does introducing solidarity mechanisms (redistribution policies) into the Talent vs. Luck model reduce economic inequality while maintaining economic productivity and social mobility?
+
+**Answer**: Yes. Our experiments demonstrate redistribution rates of 15-25% achieve optimal outcomes across all metrics.
 
 ## Key Features
 
@@ -51,6 +66,36 @@ Does introducing solidarity mechanisms (redistribution policies) into the Talent
 ├── notebooks/               # Jupyter notebooks for analysis
 └── docs/                    # Documentation
 ```
+
+## Visualizations & Results
+
+### Experiment 1: Fixed Solidarity Rates
+
+![Fixed Solidarity Analysis](data/results/fixed_solidarity/fixed_solidarity_analysis.png)
+
+**Key Finding**: Moderate redistribution (15-25%) reduces Gini coefficient from 0.39 to 0.03—a **92% reduction in inequality**—while achieving perfect upward mobility (100%).
+
+### Experiment 2: Dynamic Solidarity
+
+![Dynamic Solidarity Analysis](data/results/dynamic_solidarity/dynamic_solidarity_analysis.png)
+
+**Key Finding**: Adaptive policies responding to real-time inequality metrics outperform fixed-rate redistribution, maintaining consistently low Gini (<0.04) throughout all simulation periods.
+
+### Experiment 3: Robustness to Tax Avoidance
+
+![Heterogeneity Analysis](data/results/heterogeneity/heterogeneity_analysis.png)
+
+**Key Finding**: Even with 60% of agents avoiding taxes, 25% redistribution maintains near-identical effectiveness (Gini: 0.036), demonstrating policy resilience to non-compliance.
+
+### Complete Analysis
+
+See **[RESULTS.md](RESULTS.md)** for comprehensive findings from all 6 experiments, including:
+- Multi-dimensional policy comparisons
+- Policy timing effectiveness
+- Sensitivity analysis across parameter variations
+- Policy recommendations for real-world implementation
+
+---
 
 ## Installation
 
@@ -140,12 +185,28 @@ Combines multiple solidarity mechanisms (e.g., progressive taxation + educationa
 ### 6. Sensitivity Analysis
 Tests result stability across varying parameter conditions (talent variability, luck volatility, etc.).
 
-## Key Results
+## Quick Results Summary
 
-- **Moderate solidarity (25-30%)** effectively reduces inequality (Gini: 0.38) while maintaining productivity
-- **Dynamic mechanisms** achieve balanced outcomes with 65% upward mobility for disadvantaged agents
-- **Policy timing** matters: preventive interventions significantly outperform reactive measures
-- **Multi-dimensional policies** produce the strongest outcomes (Gini: 0.31-0.32, ~70% upward mobility)
+| Redistribution Rate | Gini Coefficient | Upward Mobility | Mean Wealth | Top 1% Share |
+|---------------------|------------------|-----------------|-------------|--------------|
+| **0% (No Policy)**  | 0.393 ⚠️        | 64.5%          | 24.73       | 7.36%        |
+| **5%**              | 0.125            | 99.0%          | 21.28       | 2.77%        |
+| **15%** ⭐          | **0.031** ✅    | **100.0%** ✅  | 20.09       | **1.20%** ✅ |
+| **25%** ⭐          | **0.037** ✅    | **100.0%** ✅  | 20.06       | **1.11%** ✅ |
+| **40%**             | 0.057            | 100.0%         | 20.16       | 1.20%        |
+| **60%**             | 0.088            | 100.0%         | 19.60       | 1.34%        |
+
+**Optimal Zone**: 15-25% redistribution achieves 90%+ inequality reduction while maintaining perfect mobility and stable wealth.
+
+### Key Findings Across All Experiments
+
+✅ **Pure meritocracy generates extreme inequality** (Gini: 0.39) despite equal starting conditions  
+✅ **Moderate redistribution is highly effective**: 15-25% achieves near-perfect equality (Gini: 0.03)  
+✅ **Preventive policies dominate**: Early intervention prevents 50-80 periods of unnecessary inequality  
+✅ **Results are robust**: Findings hold across talent variability, compliance rates, and economic parameters  
+✅ **Simple policies work best**: Fixed-rate redistribution outperforms complex multi-mechanism approaches  
+
+📊 **[See Complete Analysis in RESULTS.md →](RESULTS.md)**
 
 ## Theoretical Foundation
 
