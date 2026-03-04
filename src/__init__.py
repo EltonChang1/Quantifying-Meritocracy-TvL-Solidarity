@@ -3,7 +3,7 @@ Quantifying Meritocracy: Extending Talent vs. Luck Model to Incorporate Solidari
 """
 
 __version__ = "1.0.0"
-__author__ = "Elton Chang, Gerald Moulds"
+__author__ = "Elton Chang"
 __email__ = "contact@quantifyingmeritocracy.edu"
 
 from src.model.agent import Agent
