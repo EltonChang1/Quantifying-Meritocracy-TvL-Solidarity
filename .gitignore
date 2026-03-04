@@ -40,10 +40,11 @@ env/
 .ipynb_checkpoints
 *.ipynb
 
-# Results
-data/results/
-*.json
-*.csv
+# Results - ignore JSON/CSV but keep visualizations
+data/results/**/*.json
+data/results/**/*.csv
+# Allow PNG visualizations to be tracked
+!data/results/**/*.png
 
 # OS
 .DS_Store
