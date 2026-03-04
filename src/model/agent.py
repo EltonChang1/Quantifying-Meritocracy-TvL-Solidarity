@@ -55,8 +55,8 @@ class Agent:
             bool: True if opportunity was successful
         """
         # Success probability combines talent and luck
-        # Talent increases probability; luck is the random component
-        success_threshold = 0.5 - (self.talent * 0.15)  # Higher talent = lower threshold
+        # Talent has minimal influence; luck is dominant (Pluchino et al. 2018 model)
+        success_threshold = 0.5 + (self.talent * 0.02)  # Luck >> Talent
         
         if luck_factor < success_threshold:
             self.wealth += opportunity_value

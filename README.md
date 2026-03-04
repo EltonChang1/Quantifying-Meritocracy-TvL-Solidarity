@@ -10,44 +10,28 @@
 
 ## Overview
 
-This project consists of **two parts**:
-
 ### Part 1: Recreation of "Talent vs. Luck" Model (Pluchino et al., 2018)
 
-A computational validation of the landmark paper ["Talent vs Luck: The Role of Randomness in Success and Failure"](https://www.worldscientific.com/doi/epdf/10.1142/S0219525918500145) by A. Pluchino, A. E. Biondo, and A. Rapisarda.
+Computational validation of the landmark paper ["Talent vs Luck: The Role of Randomness in Success and Failure"](https://www.worldscientific.com/doi/epdf/10.1142/S0219525918500145).
 
-**Core Finding Reproduced**: The paper demonstrated that the most successful individuals are rarely the most talented. Instead, success is largely determined by lucky events. Our implementation validates this counter-intuitive result through agent-based simulation where 1,000 agents with normally distributed talent navigate random economic opportunities over 40 years of career simulation.
+**Core Finding Reproduced**: Most successful individuals are rarely the most talented—success is largely determined by lucky events. Agent-based simulation validates this with 1,000 agents navigating random opportunities over 40 years.
 
 ### Part 2: Extension with Solidarity Mechanisms
 
-**Original Research**: Extends the validated TvL model to test whether solidarity-based redistribution policies can correct meritocracy's inherent randomness. Through 6 comprehensive experiments, I demonstrate that:
+**Original Research**: Tests whether solidarity-based redistribution corrects meritocracy's randomness. Key findings:
 
-- **15-25% wealth redistribution reduces inequality by 90%** (Gini: 0.39 → 0.03)
-- **Perfect social mobility (100%) becomes achievable** with moderate redistribution
-- **Preventive policies dramatically outperform reactive interventions**
-- **Results hold even with 60% tax avoidance**, demonstrating real-world applicability
+- **15-25% redistribution reduces inequality by 92%** (Gini: 0.39 → 0.03)
+- **Perfect social mobility (100%)** achieved with moderate redistribution
+- **Preventive policies vastly outperform reactive interventions**
+- **Results robust even with 60% tax avoidance**
 
 ---
 
-## Why This Matters to You
+## Why This Matters
 
-### If you're starting your career...
-You might believe your success depends primarily on your talent and hard work. The TvL model shows **the most successful people are rarely the most talented**—instead, they were often in the right place at the right time. Understanding this helps you:
-- **Make better career decisions** by seeking luck-rich environments (networking, high-opportunity fields)
-- **Reduce self-blame** when setbacks occur—often it's not about your ability
-- **Support redistribution policies** that give everyone multiple chances at success
-
-### If you're already successful...
-You might attribute your wealth to superior talent. The model reveals **random lucky events account for most extreme success**. This suggests:
-- **Moderate taxation (15-25%) is justified** since your wealth resulted partly from chance
-- **Redistribution doesn't harm productivity**—simulations show 100% mobility with 25% taxes
-- **Supporting solidarity benefits everyone** by creating a resilient economic system
-
-### If you're struggling financially...
-You might blame yourself for lacking talent or effort. The evidence shows **talented people often fail due to bad luck**. Solidarity mechanisms:
-- **Give you second chances** when random setbacks occur
-- **Reduce inequality by 90%** while maintaining economic growth
-- **Achieve 100% upward mobility** for those starting with less
+- **Career/talent**: Most successful ≠ most talented; luck matters more than skill → Seek luck-rich environments, support redistribution for second chances
+- **If successful**: Random events account for extreme wealth → Moderate taxation justified, redistribution benefits systemic resilience
+- **If struggling**: Talented people often fail due to bad luck → Solidarity mechanisms reduce inequality 92%, achieve 100% mobility
 
 ---
 
@@ -103,68 +87,45 @@ You might blame yourself for lacking talent or effort. The evidence shows **tale
 
 ---
 
-## Key Results: What the Data Reveals
+## Key Results Summary
 
-### Finding 1: Luck Dominates Success More Than You Think
+### Part 1: Talent vs. Luck Validation
 
-![Fixed Solidarity Analysis](data/results/fixed_solidarity/fixed_solidarity_analysis.png)
+![TvL Recreation](data/results/tvl_recreation/tvl_recreation_analysis.png)
 
-**What this means for you**: Without redistribution, the system generates massive inequality (Gini: 0.393)—comparable to modern America—even though everyone starts equal and talent is normally distributed. The top 1% holds 7.36% of all wealth. **Your financial outcome depends more on random luck than your abilities.**
+**Finding**: Weak correlation (r=0.31) between talent and wealth; most talented rank ~184th in wealth. **Luck dominates success.**
 
-**The solution**: Just 15-25% redistribution collapses inequality by 92% (Gini drops to 0.031) while achieving 100% upward mobility. This means:
-- If you're talented but unlucky, you get second chances
-- If you're lucky, you still thrive while contributing to others' opportunities
-- Society wastes less talent due to random setbacks
+### Part 2: Solidarity Mechanisms
 
-### Finding 2: Smart Policies Respond to Real-Time Conditions
+| Redistribution Rate | Gini Coefficient | Upward Mobility | Top 1% Share |
+|---------------------|------------------|-----------------|--------------|
+| **0% (No Policy)**  | 0.393 ⚠️        | 64.5%          | 7.36%        |
+| **15%** ⭐          | **0.031** ✅    | **100.0%** ✅  | **1.20%** ✅ |
+| **25%** ⭐          | **0.037** ✅    | **100.0%** ✅  | **1.11%** ✅ |
+| **60%**             | 0.088            | 100.0%         | 1.34%        |
 
-![Dynamic Solidarity Analysis](data/results/dynamic_solidarity/dynamic_solidarity_analysis.png)
+**5 Core Findings:**
 
-**What this means for you**: Fixed 25% redistribution works well, but **adaptive policies that respond when inequality exceeds thresholds (Gini > 0.50) work 13.5% better**. Think of it like:
-- **Interest rates**: Central banks adjust based on inflation data
-- **Your savings**: You might save more during uncertain times
-- **Solidarity**: Ramp up when inequality spikes, ease when equality improves
+1. **Luck Dominates**: Pure meritocracy creates extreme inequality (Gini: 0.39); top 1% holds 7.36% of wealth despite equal starts
+   - 15-25% redistribution collapses inequality by 92% (Gini → 0.03), achieves 100% mobility
+   
+2. **Adaptive Policies Win**: Dynamic redistribution (responding to Gini > 0.50) outperforms fixed rates by 13.5%
+   - Like central banks adjusting interest rates, solidarity should respond to real-time conditions
 
-**Practical implication**: Vote for politicians who support data-driven, responsive fiscal policies—not rigid ideological positions.
+3. **Robust to Cheating**: Even with 60% tax avoidance, 25% redistribution achieves 90% inequality reduction
+   - Gini: 0.036 (full compliance) vs. 0.037 (60% avoidance) — minimal difference
 
-### Finding 3: Redistribution Works Even When People Cheat
+4. **Early Intervention Critical**: Preventive redistribution prevents 50-80 years of extreme inequality vs. reactive policies
+   - Both reach same end state, but waiting wastes a generation's potential
 
-![Heterogeneity Analysis](data/results/heterogeneity/heterogeneity_analysis.png)
+5. **Simple Beats Complex**: Flat 25% redistribution outperforms progressive taxation + UBI + educational subsidies
+   - Complex policies create loopholes and administrative overhead
 
-**What this means for you**: The common objection "rich people will just avoid taxes" is empirically weak. **Even with 60% of agents avoiding taxes, 25% redistribution still achieves 90% inequality reduction** (Gini: 0.036 vs. 0.037 with full compliance).
+![Fixed Solidarity](data/results/fixed_solidarity/fixed_solidarity_analysis.png)
+![Dynamic Solidarity](data/results/dynamic_solidarity/dynamic_solidarity_analysis.png)
+![Policy Timing](data/results/timing/policy_timing_analysis.png)
 
-**Why this matters**: Don't let perfect be the enemy of good. Imperfect enforcement still creates:
-- Massively more equal societies
-- 100% upward mobility for the disadvantaged
-- Economic resilience
-
-### Finding 4: Act Early or Pay the Price
-
-The simulations show **preventive redistribution prevents 50-80 iterations (years) of extreme inequality** compared to reactive policies. Both eventually reach the same final Gini, but waiting means:
-- A generation grows up in poverty unnecessarily
-- Talent is wasted during high-inequality periods
-- Social trust erodes
-
-**Your action**: Support early intervention in your community—universal pre-K, progressive taxation from day one, not crisis-response welfare.
-
-### Finding 5: Simple Beats Complex
-
-Testing progressive taxation, UBI, educational subsidies, and combinations reveals: **Simple flat-rate redistribution (25%) outperforms all sophisticated alternatives**. This is counter-intuitive but important:
-- Complex policies create loopholes
-- Administrative overhead wastes resources
-- Behavioral responses are unpredictable
-
-**Lesson**: Support straightforward wealth transfers over Byzantine tax codes.
-
----
-
-### Complete Experimental Analysis
-
-See **[RESULTS.md](RESULTS.md)** for:
-- Detailed methodology for each experiment
-- Full data tables and statistics
-- Policy recommendations grounded in evidence
-- Theoretical connections to economics and justice literature
+📊 **[Complete Analysis in RESULTS.md →](RESULTS.md)**
 
 ---
 
