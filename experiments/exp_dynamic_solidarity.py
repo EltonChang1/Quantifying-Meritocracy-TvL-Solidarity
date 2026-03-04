@@ -83,7 +83,7 @@ def run_dynamic_solidarity_experiment(
             "mean_gini": avg_mean_gini,
             "std_gini": std_gini,
             "upward_mobility": avg_mobility,
-            "gini_histories": [h.tolist() for h in scenario_results["gini_histories"]],
+            "gini_histories": [h.tolist() if isinstance(h, np.ndarray) else h for h in scenario_results["gini_histories"]],
         }
     
     # Save results

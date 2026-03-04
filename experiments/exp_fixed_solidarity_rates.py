@@ -72,7 +72,7 @@ def run_fixed_solidarity_experiment(
                 initial_wealth=10.0,
                 solidarity_mechanism="fixed",
                 solidarity_rate=rate,
-                seed=42 + rate*100 + run  # Reproducible but varied seeds
+                seed=int(42 + rate*100 + run)  # Reproducible but varied seeds
             )
             
             results = sim.run(verbose=False)
