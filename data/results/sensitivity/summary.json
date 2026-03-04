@@ -1,0 +1,42 @@
+{
+  "Low Talent Variability": {
+    "No Solidarity": {
+      "final_gini": 0.2121431713228853,
+      "upward_mobility": 0.758
+    },
+    "Fixed 25%": {
+      "final_gini": 0.037142215029955516,
+      "upward_mobility": 1.0
+    }
+  },
+  "High Talent Variability": {
+    "No Solidarity": {
+      "final_gini": 0.6281867554821942,
+      "upward_mobility": 0.596
+    },
+    "Fixed 25%": {
+      "final_gini": 0.04052608617929321,
+      "upward_mobility": 1.0
+    }
+  },
+  "Low Opportunity Value": {
+    "No Solidarity": {
+      "final_gini": 0.36907964680497707,
+      "upward_mobility": 0.25
+    },
+    "Fixed 25%": {
+      "final_gini": 0.03650858774199939,
+      "upward_mobility": 0.0
+    }
+  },
+  "High Opportunity Value": {
+    "No Solidarity": {
+      "final_gini": 0.36645274245858983,
+      "upward_mobility": 0.913
+    },
+    "Fixed 25%": {
+      "final_gini": 0.03649271869722692,
+      "upward_mobility": 1.0
+    }
+  }
+}

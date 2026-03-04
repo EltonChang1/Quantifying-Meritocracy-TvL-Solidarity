@@ -1,0 +1,42 @@
+{
+  "No Solidarity": {
+    "final_gini": 0.37749426203221137,
+    "final_gini_std": 0.009701749665783743,
+    "upward_mobility": 0.656,
+    "upward_mobility_std": 0.008000000000000007,
+    "mean_wealth": 24.750591750294273,
+    "top10_share": 0.28259176706013056
+  },
+  "Fixed Redistribution (25%)": {
+    "final_gini": 0.03708855025797242,
+    "final_gini_std": 0.0002851790498182849,
+    "upward_mobility": 1.0,
+    "upward_mobility_std": 0.0,
+    "mean_wealth": 20.234007521427298,
+    "top10_share": 0.11013835188197738
+  },
+  "Progressive Taxation": {
+    "final_gini": 0.6018941808219785,
+    "final_gini_std": 0.0012046629198484426,
+    "upward_mobility": 0.11800000000000001,
+    "upward_mobility_std": 0.020000000000000004,
+    "mean_wealth": 17.193401459501906,
+    "top10_share": 0.6348138581105283
+  },
+  "Universal Basic Income": {
+    "final_gini": 0.07082896482434842,
+    "final_gini_std": 0.0003688665705193772,
+    "upward_mobility": 0.972,
+    "upward_mobility_std": 0.0040000000000000036,
+    "mean_wealth": 20.338174217410128,
+    "top10_share": 0.11905879126643787
+  },
+  "Multi-Dimensional": {
+    "final_gini": 0.5246981541466361,
+    "final_gini_std": 0.0005966261167290599,
+    "upward_mobility": 0.037,
+    "upward_mobility_std": 0.009,
+    "mean_wealth": 14.957300832111038,
+    "top10_share": 0.5467899479119784
+  }
+}

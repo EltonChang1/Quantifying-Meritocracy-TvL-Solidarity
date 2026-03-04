@@ -1,0 +1,26 @@
+{
+  "No Intervention": {
+    "final_gini": 0.36203168027706045,
+    "final_gini_std": 0.016793722205746375,
+    "upward_mobility": 0.687,
+    "mean_wealth": 24.74533937219037
+  },
+  "Preventive (From Start)": {
+    "final_gini": 0.03672736683597089,
+    "final_gini_std": 0.00025266435851523106,
+    "upward_mobility": 1.0,
+    "mean_wealth": 20.426598212582604
+  },
+  "Delayed (After Iteration 50)": {
+    "final_gini": 0.03672736683597089,
+    "final_gini_std": 0.00025266435851523106,
+    "upward_mobility": 1.0,
+    "mean_wealth": 20.426598212582604
+  },
+  "Very Delayed (After Iteration 80)": {
+    "final_gini": 0.03672736683597089,
+    "final_gini_std": 0.00025266435851523106,
+    "upward_mobility": 1.0,
+    "mean_wealth": 20.426598212582604
+  }
+}
